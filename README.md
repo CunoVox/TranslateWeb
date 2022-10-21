@@ -2,9 +2,9 @@
 
 ## Đề tài: Tìm hiểu Amazon Translate và viết ứng dụng minh họa
 
-        Nguyễn Quốc Bảo     - 19133002
-        Võ Hoàng Khả Diệu   - 19133014
-        Trần Công Tuấn Mạnh - 19133035
+        Nguyễn Tiến Tài - 20110563
+        Võ Hoàn Hảo - 20110472
+        Nguyễn Sỹ Hoàng Lâm - 20110514
 
 ## Các dịch vụ sử dụng
 
@@ -31,7 +31,7 @@
 - Bước 4: Cấu hình aws_access_key_id và aws_secret_access_key
 
   - Configuration index.html
-    
+
     cd aws-translate-app/translate-app/templates/index.html
 
     ![](aws-translate-app/translate-app/assets/config_index.png)
@@ -43,9 +43,11 @@
     ![](aws-translate-app/translate-app/assets/config_app.png)
 
 - Bước 5: Build và run file docker-compose
-  + cd aws-translate-app
-  + docker-compose build
-  + docker-compose up
+
+  - cd aws-translate-app
+  - docker-compose build
+  - docker-compose up
 
 - Bước 6: Test web bằng địa chỉ máy ảo EC2 port 8000
+
 #
