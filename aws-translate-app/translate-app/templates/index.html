@@ -260,7 +260,8 @@
                     <textarea id="outputText" name="outputText" rows="20" cols="90"
                         placeholder="Translated text..."></textarea>
                     <div class="group-btn">
-                        <button class="poly-btn btn"><i class="fa fa-volume-up text-light"></i></button>
+                        <button class="poly-btn btn" onclick="doSynthesizeOutput()"><i
+                                class="fa fa-volume-up text-light"></i></button>
                         <button class="download-btn btn"><i class="fa fa-download"
                                 onclick="Export2Word1()"></i></button>
                     </div>
@@ -390,19 +391,19 @@
             var targetDropdown = document.getElementById("targetLanguageCodeDropdown");
             var targetLanguageCode = targetDropdown.options[targetDropdown.selectedIndex].value;
 
-            var params = {
-
-                Text: inputText,
-                SourceLanguageCode: 'vi',
-                TargetLanguageCode: 'ja'
-            };
-
             // var params = {
 
             //     Text: inputText,
-            //     SourceLanguageCode: sourceDropdown.options[sourceDropdown.selectedIndex].value,
-            //     TargetLanguageCode: targetDropdown.options[targetDropdown.selectedIndex].value
+            //     SourceLanguageCode: 'vi',
+            //     TargetLanguageCode: 'ja'
             // };
+
+            var params = {
+
+                Text: inputText,
+                SourceLanguageCode: sourceLanguageCode,
+                TargetLanguageCode: targetLanguageCode
+            };
             translate.translateText(params, function (err, data) {
                 if (err) {
                     console.log(err, err.stack);
