@@ -2,9 +2,9 @@
 
 ## Đề tài: Tìm hiểu Amazon Translate và viết ứng dụng minh họa
 
-      Nguyễn Tiến Tài - 20110563
-      Võ Hoàn Hảo - 20110472
-      Nguyễn Sỹ Hoàng Lâm - 20110514
+        Nguyễn Tiến Tài - 20110563
+        Võ Hoàn Hảo - 20110472
+        Nguyễn Sỹ Hoàng Lâm - 20110514
 
 ## Các dịch vụ sử dụng
 
