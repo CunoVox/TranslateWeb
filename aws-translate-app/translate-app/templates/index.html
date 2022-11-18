@@ -160,8 +160,8 @@
                             <option value="cy">Welsh</option>
                         </select>
                     </div>
-                    <textarea id="inputText" name="inputText" rows="20" cols="90"
-                        placeholder="Text to translate..."></textarea>
+                    <textarea id="inputText" name="inputText" rows="20" cols="90" placeholder="Text to translate..."
+                        onchange="doTranslate()"></textarea>
 
                     <div class="group-btn">
                         <button class="translate-btn btn" onclick="doTranslate()">TRANSLATE</button>
@@ -280,7 +280,8 @@
         </div>
         <div class="translate-document">
             <p>Translate document</p>
-            <form method="POST" , action="/extracttext" , enctype="multipart/form-data" class="main__menu--tool-form1">
+            <form method="POST" , action="/translatedocument" , enctype="multipart/form-data"
+                class="main__menu--tool-form1">
                 <input style="color:black" type="file" , name="filenameDocument" , id="filenameDocument"
                     class="filebutton" />
                 <!--                <button class="btn btn-success" onclick="Export2Word();">DOWNLOAD FILE</button>-->
