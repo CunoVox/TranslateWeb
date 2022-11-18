@@ -161,7 +161,7 @@
                         </select>
                     </div>
                     <textarea id="inputText" name="inputText" rows="20" cols="90" placeholder="Text to translate..."
-                        onchange="doTranslate()"></textarea>
+                        oninput="doTranslate()"></textarea>
 
                     <div class="group-btn">
                         <button class="translate-btn btn" onclick="doTranslate()">TRANSLATE</button>
@@ -378,6 +378,7 @@
         }
 
         function doTranslate() {
+            console.log("dmm");
             var inputText = document.getElementById('inputText').value;
             if (!inputText) {
                 alert("Vui lòng nhập văn bản bạn muốn dịch");
