@@ -51,25 +51,25 @@ def extractImage():
     return render_template("index.html", jsonData=json.dumps(responseJson))
 
 
-@ app.route("/translatedocument", methods=["POST"])
-def extractImage():
-    file = request.files.get("filenameDocument")
-    binaryFile = file.read()
-    textractclient = client()
-    response = textractclient.detect_document_text(
-        Document={
-            'Bytes': binaryFile
-        }
-    )
-    extractedText = ""
-    for block in response['Blocks']:
-        if block["BlockType"] == "WORD":
-            extractedText = extractedText+block["Text"]+" "
-    responseJson = {
-        "text": extractedText
-    }
-    print(responseJson)
-    return render_template("index.html", jsonData=json.dumps(responseJson))
+# @ app.route("/translatedocument", methods=["POST"])
+# def extractImage():
+#     file = request.files.get("filenameDocument")
+#     binaryFile = file.read()
+#     textractclient = client()
+#     response = textractclient.detect_document_text(
+#         Document={
+#             'Bytes': binaryFile
+#         }
+#     )
+#     extractedText = ""
+#     for block in response['Blocks']:
+#         if block["BlockType"] == "WORD":
+#             extractedText = extractedText+block["Text"]+" "
+#     responseJson = {
+#         "text": extractedText
+#     }
+#     print(responseJson)
+#     return render_template("index.html", jsonData=json.dumps(responseJson))
 
 
 if __name__ == '__main__':
