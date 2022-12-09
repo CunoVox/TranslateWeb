@@ -7,7 +7,7 @@
         Nguyễn Sỹ Hoàng Lâm - 20110514
         
 ### Link deploy: 
-        https://thomsonbel12.pythonanywhere.com
+        [Translate Web](https://thomsonbel12.pythonanywhere.com)
 
 ## Các dịch vụ sử dụng
 
