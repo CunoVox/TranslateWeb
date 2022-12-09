@@ -1,9 +1,8 @@
-from flask import render_template, Flask, request
+from flask import redirect, render_template, Flask, request, url_for
 import boto3
 import json
-account_id = "AKIA3EF5X6Z75M4T3CP2"
-account_key = "Y0o6wYv9oSl2YtF14tx9hj/B6bvSyw3RhqdoQhLK"
-
+account_id = "AKIAYTOWXMDS7HLSJNXL"
+account_key = "t1T7sFYKOZVLGAynLoasQZdxGR3Awl+UNJ4cPDbl"
 
 def client():
     global account_id
@@ -31,7 +30,7 @@ def main():
 
 @ app.route("/extracttext", methods=["POST"])
 def extractImage():
-    file = request.files.get("filename")
+    file = request.files.get("file_select")
     binaryFile = file.read()
     textractclient = client()
     response = textractclient.detect_document_text(
@@ -44,37 +43,13 @@ def extractImage():
         if block["BlockType"] == "LINE":
             extractedText = extractedText+block["Text"]+" "
     responseJson = {
-
+        
         "text": extractedText
     }
     print(responseJson)
+    # return redirect(url_for("main"), jsonData=json.dumps(responseJson))
     return render_template("index.html", jsonData=json.dumps(responseJson))
-
-
-# @ app.route("/translatedocument", methods=["POST"])
-# def extractImage():
-#     file = request.files.get("filenameDocument")
-#     binaryFile = file.read()
-#     textractclient = client()
-#     response = textractclient.detect_document_text(
-#         Document={
-#             'Bytes': binaryFile
-#         }
-#     )
-#     extractedText = ""
-#     for block in response['Blocks']:
-#         if block["BlockType"] == "WORD":
-#             extractedText = extractedText+block["Text"]+" "
-#     responseJson = {
-#         "text": extractedText
-#     }
-#     print(responseJson)
-#     return render_template("index.html", jsonData=json.dumps(responseJson))
 
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
-
-
-# if __name__ == '__main__':
-#     app.run(host='0.0.0.0', port=5000)
