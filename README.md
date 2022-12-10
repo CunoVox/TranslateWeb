@@ -2,9 +2,9 @@
 
 ## Đề tài: Tìm hiểu Amazon Translate và viết ứng dụng minh họa
 
-        Nguyễn Tiến Tài - 20110563
-        Võ Hoàn Hảo - 20110472
-        Nguyễn Sỹ Hoàng Lâm - 20110514
+        - Nguyễn Tiến Tài - 20110563
+        - Võ Hoàn Hảo - 20110472
+        - Nguyễn Sỹ Hoàng Lâm - 20110514
         
 ### Link deploy: 
         https://thomsonbel12.pythonanywhere.com
@@ -24,7 +24,7 @@
 
 - Bước 1: Cài đặt python
 - Bước 2: pip install requirement.txt
-- Bước 3: pip istall poto3
+- Bước 3: pip istall boto3
 - Bước 4: Thay đổi aws_access_key_id, aws_secret_access_key ở file app.py , index.html, folder: dist/main.js
 - Bước 5: Chạy file app.py để chạy localhost
 
