@@ -8,6 +8,7 @@
         
 ### Link deploy: 
         https://thomsonbel12.pythonanywhere.com
+        https://translatewebpage.pythonanywhere.com/
         
 ### Video Báo Cáo lần 1 : 
         https://youtu.be/OPYPTo6ydiI
