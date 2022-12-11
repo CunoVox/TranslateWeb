@@ -198,8 +198,17 @@ form.addEventListener('drop', (e) => {
     }
     // doTranslate();
     else if (x === 2) {
-        // document.getElementById('submit_textract_btn').click()
+
         showImages();
+        document.getElementById('submit_textract_btn').click();
+    }
+    else {
+        try {
+            readDocxFile();
+            showImages();
+        } catch {
+            alert("Không hỗ Trợ định đạng file này");
+        }
     }
     text_inner.innerHTML = `Kéo & thả file ở đây hoặc
     <label for="img_select_btn"
