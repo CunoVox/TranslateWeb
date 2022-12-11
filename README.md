@@ -8,6 +8,13 @@
         
 ### Link deploy: 
         https://thomsonbel12.pythonanywhere.com
+        
+### Video Báo Cáo lần 1 : 
+        https://youtu.be/OPYPTo6ydiI
+### Video Báo Cáo lần 2 :
+        https://youtu.be/X0O2TjumSsQ
+### Link Google Drive : 
+        https://drive.google.com/drive/u/1/folders/1tgqYDJm942Mf-YtptIGFsurCCQz4kUQU
 
 ## Các dịch vụ sử dụng
 
